@@ -1,5 +1,5 @@
 {
-  "best_model_label": "Stacking",
+  "best_model": "Stacking",
   "test_metrics": {
     "accuracy": 0.9816,
     "f1": 0.7766990291262136,
