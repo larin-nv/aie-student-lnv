@@ -1,0 +1,26 @@
+{
+  "experiment_id": "E4",
+  "dataset": "CIFAR10",
+  "seed": 42,
+  "architecture": {
+    "hidden_sizes": [
+      256,
+      128
+    ],
+    "activation": "ReLU",
+    "dropout": 0.0,
+    "batchnorm": true
+  },
+  "hyperparameters": {
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "batch_size": 64,
+    "epochs": 12,
+    "momentum": 0,
+    "weight_decay": 0
+  },
+  "metrics": {
+    "best_val_accuracy": 0.5528,
+    "best_val_loss": 1.3148
+  }
+}
