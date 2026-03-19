@@ -15,7 +15,7 @@
   "optimizer": "Adam",
   "lr": 0.001,
   "batch_size": 64,
-  "epochs": 12,
+  "epochs": 50,
   "momentum": 0,
   "weight_decay": 0,
   "best_val_accuracy": 0.5528,
