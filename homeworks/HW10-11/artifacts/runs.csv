@@ -1,0 +1,7 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,STL10,42,"32, 64, 128, 256 / ReLU / 0.0 / False",Adam,0.001,3,0.469,,,,,Базовая CNN без аугментаций
+C2,classification,STL10,42,"32, 64, 128, 256 / ReLU / 0.0 / False",Adam,0.001,3,0.461,,,,,Базовая CNN с аугментацией
+C3,classification,STL10,42,"32, 64, 128, 256 / ReLU / 0.0 / False",Adam,0.001,3,0.922,,,,,"Pretrained ResNet18. Backbone заморожен, обучается только fc"
+C4,classification,STL10,42,"32, 64, 128, 256 / ReLU / 0.0 / False",Adam,0.001,3,0.945,0.959,,,,Pretrained ResNet18. Разморожены layer4 + fc
+V1,segmentation,OxfordIIITPet,42,DeepLabV3+ResNet50 / 21 classes / COCO pretrained,,,0,,,0.999,0.327,0.327,Базовая постобработка для класса cat
+V2,segmentation,OxfordIIITPet,42,DeepLabV3+ResNet50 / 21 classes / COCO pretrained,,,0,,,0.999,0.35,0.35,Альтернативная постобработка маски (порог для бинаризации foreground-класса = 0.3)

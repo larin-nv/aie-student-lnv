@@ -1,0 +1,21 @@
+{
+  "experiment_id": "C4",
+  "dataset": "STL10",
+  "seed": 42,
+  "model_type": "ResNet18",
+  "num_classes": 10,
+  "fine_tune_layers": [
+    "layer4",
+    "fc"
+  ],
+  "model_summary": "32, 64, 128, 256 / ReLU / 0.0 / False",
+  "optimizer": "Adam",
+  "layer4_lr": 0.0001,
+  "fc_lr": 0.0001,
+  "batch_size": 64,
+  "epochs": 3,
+  "criterion": "CrossEntropyLoss",
+  "best_val_accuracy": 0.945,
+  "best_val_loss": 0.161,
+  "test_accuracy": 0.959
+}
