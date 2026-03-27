@@ -1,0 +1,5 @@
+experiment_id,task,dataset,seed,split_summary,window_size,horizon,model_summary,features_summary,scaler,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape,test_mae,test_rmse,test_mape,notes
+B1,forecasting,S12-hw-dataset.csv,42,70/15/15,,1,naive-last,,,,,,6.441118,8.207078,4.39362,,,,"Baseline, прогноз последнее известное значение"
+B2,forecasting,S12-hw-dataset.csv,42,70/15/15,,1,moving-average,rolling_mean_7,,,,,12.69756,15.226533,8.812577,,,,"Baseline, прогноз скользящее среднее"
+B3,forecasting,S12-hw-dataset.csv,42,70/15/15,,1,ridge-last-features,"lag_1, 7, 14, 28; rolling_mean_7",StandartScaler (features),,,,6.58268,8.094044,4.386879,,,,"Линейная модель с lag, rolling"
+R1,forecasting,S12-hw-dataset.csv,42,70/15/15,28.0,1,gpu-forecast,window_size=28,StandartScaler (target),Adam,0.0005,30.0,5.720355,7.37221,3.862717,6.944059,8.805502,4.462556,Лучшая модель по validation. Выбрана для test
