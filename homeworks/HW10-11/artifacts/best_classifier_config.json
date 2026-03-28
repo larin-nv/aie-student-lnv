@@ -15,6 +15,9 @@
   "batch_size": 64,
   "epochs": 3,
   "criterion": "CrossEntropyLoss",
+  "transforms": "Resize(256) / CenterCrop(224) / ToTensor / Normalize(ImageNet)",
+  "preprocess": "224x224 / ImageNet normalization",
+  "augmentation": "RandomResizedCrop(224, scale=(0.7, 1.0)) / RandomHorizontalFlip(p=0.5)",
   "best_val_accuracy": 0.945,
   "best_val_loss": 0.161,
   "test_accuracy": 0.959
