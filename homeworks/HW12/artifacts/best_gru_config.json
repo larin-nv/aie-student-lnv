@@ -6,7 +6,7 @@
   "num_layers": 2,
   "window_size": 28,
   "horizon": 1,
-  "split_summary": "70/15/15",
+  "split_summary": "temporal split: train=2025-01-01->2025-05-06 (70%), val=2025-05-07->2025-06-02 (15%), test=2025-06-03->2025-06-29 (15%)",
   "optimizer": "Adam",
   "learning_rate": 0.0005,
   "batch_size": 64,
