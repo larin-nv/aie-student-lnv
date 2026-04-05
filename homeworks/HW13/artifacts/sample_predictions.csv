@@ -1,0 +1,11 @@
+model,dataset,text,true_label,pred_label,confidence
+bhadresh-savani/distilbert-base-uncased-emotion,emotion,i didnt feel humiliated,sadness,sadness,1.0
+bhadresh-savani/distilbert-base-uncased-emotion,emotion,i can go from feeling so hopeless to so damned hopeful just from being...,sadness,sadness,1.0
+bhadresh-savani/distilbert-base-uncased-emotion,emotion,im grabbing a minute to post i feel greedy wrong,anger,anger,1.0
+bhadresh-savani/distilbert-base-uncased-emotion,emotion,i am ever feeling nostalgic about the fireplace i will know that it is...,love,love,1.0
+bhadresh-savani/distilbert-base-uncased-emotion,emotion,i am feeling grouchy,anger,anger,1.0
+google/electra-small-discriminator,emotion,im feeling rather rotten so im not very ambitious right now,sadness,sadness,0.8505
+google/electra-small-discriminator,emotion,im updating my blog because i feel shitty,sadness,sadness,0.8506
+google/electra-small-discriminator,emotion,i never make her separate from me because i don t ever want her to feel like i m ashamed with her,sadness,sadness,0.8513
+google/electra-small-discriminator,emotion,i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived,joy,joy,0.9193
+google/electra-small-discriminator,emotion,i was feeling a little vain when i did this one,sadness,sadness,0.8464
