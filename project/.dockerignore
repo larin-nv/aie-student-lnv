@@ -1,0 +1,40 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Git
+.git/
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/
+
+# Данные (сырые не нужны в контейнере)
+data/
+
+# Тесты
+tests/
+.pytest_cache/
+
+# Документация
+README.md
+report.md
+docs/
+
+# Временные файлы
+*.log
+.env

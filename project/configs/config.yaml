@@ -1,0 +1,42 @@
+# Конфигурация проекта HR Wellbeing Assistant
+
+# Параметры API
+api:
+  host: "0.0.0.0"
+  port: 8000
+  title: "HR Wellbeing Assistant API"
+  version: "1.0.0"
+
+# Параметры модели
+model:
+  artifacts_dir: "artifacts"
+  model_file: "model.pkl"
+  features_file: "feature_columns.pkl"
+
+# Параметры данных
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  raw_file: "employee_burnout_raw.csv"
+  processed_file: "employee_burnout_processed.csv"
+  sample_file: "burnout_sample.csv"
+
+# Параметры предобработки
+preprocessing:
+  reference_date: "2024-01-01"
+  burnout_threshold: 0.5
+  sample_size: 100
+
+# Параметры обучения
+training:
+  test_size: 0.2
+  random_state: 42
+  catboost:
+    iterations: 100
+    depth: 6
+    learning_rate: 0.1
+
+# Параметры логирования
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
