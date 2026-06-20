@@ -75,12 +75,11 @@ python -m venv .venv
 
 # Активировать окружение:
 # Windows:
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 # Linux / macOS:
 source .venv/bin/activate
 
 # Установить зависимости
-pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
