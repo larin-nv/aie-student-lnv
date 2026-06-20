@@ -2,14 +2,22 @@ import os
 from pathlib import Path
 import numpy as np
 import pandas as pd
+import yaml
 
-RAW_DATA_PATH = Path("data/raw/employee_burnout_raw.csv")
-PROCESSED_DATA_PATH = Path("data/processed/employee_burnout_processed.csv")
-SAMPLE_DATA_PATH = Path("data/processed/burnout_sample.csv")
+CONFIG_PATH = Path(__file__).resolve().parent.parent.parent / "configs" / "config.yaml"
 
-REFERENCE_DATE = pd.Timestamp("2011-01-01")
-BURNOUT_THRESHOLD = 0.5
-SAMPLE_SIZE = 100
+def load_config():
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+config = load_config()
+
+RAW_DATA_PATH = Path(config["data"]["raw_dir"]) / config["data"]["raw_file"]
+PROCESSED_DATA_PATH = Path(config["data"]["processed_dir"]) / config["data"]["processed_file"]
+SAMPLE_DATA_PATH = Path(config["data"]["processed_dir"]) / config["data"]["sample_file"]
+REFERENCE_DATE = pd.Timestamp(config["preprocessing"]["reference_date"])
+BURNOUT_THRESHOLD = config["preprocessing"]["burnout_threshold"]
+SAMPLE_SIZE = config["preprocessing"]["sample_size"]
 
 CATEGORICAL_ENCODINGS = {
     "wfh_setup_available": {"Yes": 1, "No": 0},

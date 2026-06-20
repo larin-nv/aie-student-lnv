@@ -1,7 +1,5 @@
 """
 Тесты для модуля предобработки данных.
-
-Запуск: pytest tests/test_data.py -v
 """
 
 import pytest

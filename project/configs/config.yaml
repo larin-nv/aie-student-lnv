@@ -4,7 +4,7 @@
 api:
   host: "0.0.0.0"
   port: 8000
-  title: "HR Wellbeing Assistant API"
+  title: "AIE Project"
   version: "1.0.0"
 
 # Параметры модели
@@ -23,7 +23,7 @@ data:
 
 # Параметры предобработки
 preprocessing:
-  reference_date: "2024-01-01"
+  reference_date: "2011-01-01"
   burnout_threshold: 0.5
   sample_size: 100
 

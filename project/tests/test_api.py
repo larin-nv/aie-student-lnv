@@ -1,7 +1,5 @@
 """
 Тесты для API сервиса.
-
-Запуск: pytest tests/test_api.py -v
 """
 
 import pytest

@@ -98,7 +98,7 @@ except Exception as e:
 # ---------------------------------------------------------------------------
 
 app = FastAPI(
-    title="HR Wellbeing Assistant API",
+    title="AIE Project",
     description="Сервис прогнозирования риска эмоционального выгорания сотрудников",
     version="1.0.0",
 )
