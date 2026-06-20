@@ -91,7 +91,7 @@ pip install -r requirements.txt
 
 ```bash
 cd project
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 python -m src.data.prepare_data
 ```
 
@@ -104,7 +104,7 @@ python -m src.data.prepare_data
 
 ```bash
 cd project
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 python -m src.service.main
 ```
 
@@ -195,7 +195,7 @@ curl -X 'POST' \
 
 ```bash
 cd project
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 pytest tests/ -v
 ```
 
